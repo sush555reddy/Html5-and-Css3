@@ -4,7 +4,8 @@ img{
 }
 .main{
 max-width: 80%;
-margin: auto;   
+margin: auto;
+   
 }
 .navbar{
 width: 80%;
@@ -14,18 +15,18 @@ position: absolute;
 .navbar ul{
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
+    height: 60px;
     background-color: red;
 }
 .navbar li {
     float: left;
     font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
     
 }
 .navbar ul li a {
-        display: block;
         color: white;
-        text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     
@@ -53,8 +54,7 @@ aside{
     padding: 5px 5px;
     height: 20px;
 }
-.sidenav{
-    
+.sidenav{   
     float: right;
     width: 30%;
     height: 200px;
@@ -68,3 +68,12 @@ aside{
     position: absolute;
     margin: 90% 10% 0%;
  }
+
+ @media only screen and (min-width: 300px) and (max-width: 600px) {
+    body {
+        background-color:greenyellow;
+    }
+    .navbar ul{
+        text-decoration-line: initial; 
+    }
+}
