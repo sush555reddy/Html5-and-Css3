@@ -9,16 +9,17 @@ margin: auto;
 .navbar{
 width: 80%;
 position: absolute;
+
 }
 .navbar ul{
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: red;
 }
 .navbar li {
     float: left;
+    font-weight: bold;
     
 }
 .navbar ul li a {
@@ -40,22 +41,23 @@ article {
 }
 .left-side{
     float: left;
-    width: 70%;
+    width: 68%;
     height: 200px;
     background-color: bisque;
-
+    margin-bottom: 25px;    
 }
 aside{
     position: relative;
     top: 10px;
     left: 10px;
     padding: 5px 5px;
+    height: 20px;
 }
 .sidenav{
-    margin: 10px;
+    
     float: right;
     width: 30%;
-    height: 150px;
+    height: 200px;
     background-color: aquamarine;
 }
 .footer {
