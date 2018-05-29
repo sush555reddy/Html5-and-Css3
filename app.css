@@ -4,76 +4,95 @@ img{
 }
 .main{
 max-width: 80%;
-margin: auto;
-   
+margin: auto;   
 }
-.navbar{
-width: 80%;
-position: absolute;
 
-}
-.navbar ul{
-    list-style-type: none;
-    padding: 0;
-    height: 60px;
+/* .navbar{
     background-color: red;
+    padding: 5px;
 }
-.navbar li {
-    float: left;
+.navbar ul li {
+    display: inline;
     font-weight: bold;
-    padding: 20px;
     font-size: 20px;
+    position: relative;
     
 }
 .navbar ul li a {
         color: white;
-        padding: 14px 16px;
+        padding: 10px;
         text-decoration: none;
     
 }
 li a:hover {
     background-color:darkred;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
 }
-article { 
-    display: block;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-.left-side{
+
+li {
     float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: darkred;
+}
+
+.left_side{
     width: 68%;
-    height: 200px;
-    background-color: bisque;
-    margin-bottom: 25px;    
+    float: left;
 }
-aside{
-    position: relative;
-    top: 10px;
-    left: 10px;
-    padding: 5px 5px;
-    height: 20px;
-}
-.sidenav{   
+.Right_side{
+    width:30%;
+   
     float: right;
-    width: 30%;
-    height: 200px;
-    background-color: aquamarine;
 }
-.footer {
+section{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;   
+    background-color: aqua;
+}
+.sider{
+    background-color: coral;
+}
+
+footer {
     background-color: red;
     color: white;
     text-align: center;
-    width: 80%;
-    position: absolute;
-    margin: 90% 10% 0%;
+    width: 100%;
+    float: left;
+   
  }
 
- @media only screen and (min-width: 300px) and (max-width: 600px) {
+ @media screen and (max-width: 600px)  {
     body {
         background-color:greenyellow;
     }
-    .navbar ul{
-        text-decoration-line: initial; 
+   
+   
+   .Right_side,.left_side{
+       float:none;
+       width: auto;
+   }
+.navbar ul li{
+        float:none;
     }
 }
